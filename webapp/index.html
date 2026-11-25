@@ -1,12 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script src="analytics.js"></script>
+<script data-goatcounter="https://wizkidz-pyinsect-hardware.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#14241b">
+  <meta name="theme-color" content="#2f6b45">
   <title>PyInsect</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%0A%20%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%232f6b45%22/%3E%0A%20%20%3Cg%20stroke%3D%22%23f3f5ef%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M27%2015%2022%208M37%2015%2042%208%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M21%2029%2012%2025M21%2037%2011%2037M22%2045%2013%2051M43%2029%2052%2025M43%2037%2053%2037M42%2045%2051%2051%22/%3E%0A%20%20%3C/g%3E%0A%20%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2219%22%20r%3D%226%22%20fill%3D%22%23f3f5ef%22/%3E%0A%20%20%3Cellipse%20cx%3D%2232%22%20cy%3D%2239%22%20rx%3D%2212.5%22%20ry%3D%2216%22%20fill%3D%22%23f3f5ef%22/%3E%0A%20%20%3Cpath%20d%3D%22M32%2025v29%22%20stroke%3D%22%232f6b45%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22/%3E%0A%3C/svg%3E%0A">
+  <!-- Same fonts as the website -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;600;700&display=swap">
   <!-- Bump ?v= whenever app.js or style.css changes, so phones load the new copy instead of a cached one. -->
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script src="app.js?v=5" defer></script>
 </head>
@@ -15,9 +22,23 @@
 <!-- ============ INTRO ============ -->
 <main id="screen-intro" class="screen active">
   <header class="hero">
-    <h1>PyInsect</h1>
+    <div class="brand">
+      <svg aria-hidden="true" viewBox="0 0 64 64">
+        <rect width="64" height="64" rx="14" fill="#2f6b45"/>
+        <g stroke="#f3f5ef" stroke-width="3.2" stroke-linecap="round" fill="none">
+          <path d="M27 15 22 8M37 15 42 8"/>
+          <path d="M21 29 12 25M21 37 11 37M22 45 13 51M43 29 52 25M43 37 53 37M42 45 51 51"/>
+        </g>
+        <circle cx="32" cy="19" r="6" fill="#f3f5ef"/>
+        <ellipse cx="32" cy="39" rx="12.5" ry="16" fill="#f3f5ef"/>
+        <path d="M32 25v29" stroke="#2f6b45" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <h1>PyInsect</h1>
+    </div>
     <p>Put the insect on the turntable and press the button. Photos are taken while it spins and the light changes by itself.</p>
   </header>
+
+  <p class="privacy-link"><a href="privacy.html">🔒 Privacy policy</a></p>
 
   <ol class="steps">
     <li><b>1 · Capture</b>Zoom in on the bug, then the photos are taken while the turntable spins and the lighting changes (dim, dark, bright, flashlight).</li>

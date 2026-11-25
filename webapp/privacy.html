@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – PyInsect</title>
+<script src="analytics.js"></script>
+<script data-goatcounter="https://wizkidz-pyinsect-hardware.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;600;700&display=swap">
+<style>
+/* "Liquid glass": translucent, blurred panels floating over a soft colourful backdrop */
+:root {
+  --ink: #15241b;
+  --muted: #4d5d53;
+  --accent: #2f6b45;
+  --accent-soft: rgba(47, 107, 69, .14);
+  --alert: #b3261e;
+  --alert-soft: rgba(179, 38, 30, .12);
+  --line: rgba(255, 255, 255, .55);
+
+  --glass: rgba(255, 255, 255, .42);
+  --glass-strong: rgba(255, 255, 255, .62);
+  --glass-edge: rgba(255, 255, 255, .7);
+  --glass-shadow: 0 10px 34px rgba(25, 45, 35, .14), 0 1px 3px rgba(25, 45, 35, .08);
+  --glass-shine: inset 0 1px 0 rgba(255, 255, 255, .9), inset 0 -1px 0 rgba(255, 255, 255, .25);
+  --blur: blur(22px) saturate(175%);
+
+  --backdrop:
+    radial-gradient(42rem 32rem at 8% 6%, rgba(126, 211, 160, .75), transparent 62%),
+    radial-gradient(36rem 30rem at 96% 14%, rgba(132, 196, 255, .65), transparent 60%),
+    radial-gradient(40rem 34rem at 78% 92%, rgba(255, 198, 140, .6), transparent 62%),
+    radial-gradient(34rem 30rem at 4% 88%, rgba(201, 170, 255, .55), transparent 60%),
+    radial-gradient(30rem 26rem at 45% 52%, rgba(150, 225, 205, .45), transparent 65%),
+    linear-gradient(160deg, #eef6ef 0%, #f3f1ea 100%);
+
+  --display: "Bricolage Grotesque", "Noto Sans SC", "Noto Sans TC", "Noto Sans KR", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Noto Sans SC", "Noto Sans TC", "Noto Sans KR", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", "Noto Sans SC", "Noto Sans TC", "Noto Sans KR", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", "Malgun Gothic", ui-monospace, Consolas, monospace;
+  --surface: #ffffff; --radius: 18px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8efe9; --muted: #a3b2a8; --accent: #86d3a1; --accent-soft: rgba(134, 211, 161, .16);
+    --alert: #ff8f80; --alert-soft: rgba(255, 143, 128, .14); --line: rgba(255, 255, 255, .12);
+    --glass: rgba(28, 38, 33, .45); --glass-strong: rgba(36, 48, 42, .62); --glass-edge: rgba(255, 255, 255, .14);
+    --glass-shadow: 0 12px 38px rgba(0, 0, 0, .45), 0 1px 3px rgba(0, 0, 0, .3);
+    --glass-shine: inset 0 1px 0 rgba(255, 255, 255, .16), inset 0 -1px 0 rgba(255, 255, 255, .04);
+    --backdrop:
+      radial-gradient(42rem 32rem at 8% 6%, rgba(46, 140, 92, .55), transparent 62%),
+      radial-gradient(36rem 30rem at 96% 14%, rgba(48, 98, 170, .5), transparent 60%),
+      radial-gradient(40rem 34rem at 78% 92%, rgba(150, 90, 40, .42), transparent 62%),
+      radial-gradient(34rem 30rem at 4% 88%, rgba(110, 70, 170, .42), transparent 60%),
+      radial-gradient(30rem 26rem at 45% 52%, rgba(40, 120, 110, .3), transparent 65%),
+      linear-gradient(160deg, #0d1411 0%, #121516 100%);
+    --surface: #18201b;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { min-height: 100%; background: var(--backdrop); background-attachment: fixed; }
+body {
+  margin: 0; min-height: 100vh; background: var(--backdrop); background-attachment: fixed;
+  color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+a { color: var(--accent); }
+.wrap, main { max-width: 820px; margin: 0 auto; padding: 24px 16px 0; }
+main { display: grid; gap: 16px; padding-bottom: 56px; }
+.top a { display: inline-block; font-weight: 500; margin-bottom: 14px; }
+h1, h2 { font-family: var(--display); line-height: 1.1; }
+h1 { font-size: clamp(30px, 6vw, 46px); margin: 0 0 6px; }
+h2 { font-size: 19px; font-weight: 500; margin: 0 0 8px; }
+.top p, .updated { margin: 0; color: var(--muted); }
+section { padding: 18px 20px; border-radius: 22px; background: var(--glass); -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow), var(--glass-shine); }
+section.hero { border-color: var(--accent); }
+p { margin: 8px 0; }
+ul { margin: 8px 0 0; padding-left: 1.4rem; } li { margin: 6px 0; }
+.no li::marker { content: "✕  "; color: var(--alert); font-weight: 800; }
+.yes li::marker { content: "✓  "; color: var(--accent); font-weight: 800; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="./">← Back to PyInsect</a>
+  <h1>🔒 Privacy policy</h1>
+  <p>How PyInsect treats your information. <span class="updated">Last updated: 16 November 2026</span></p>
+</div></header>
+<main>
+<section class="hero">
+  <h2>The short version</h2>
+  <p>PyInsect is made for kids. We count how many people visit and which pages they open, so we can make it better. We use GoatCounter for this. It uses no cookies, does not save your IP address, and we never use any of this for ads.</p>
+</section>
+
+<section>
+  <h2>📊 What we count</h2>
+  <p>We use <a href="https://www.goatcounter.com/">GoatCounter</a>, a small, privacy-friendly visitor counter, to see how many people use PyInsect. It keeps only totals:</p>
+  <ul class="yes">
+    <li>which pages or screens are opened, and how many times</li>
+    <li>the country people are in (never a street or exact spot)</li>
+    <li>the kind of browser and device (for example "Chrome on Android"), and screen size</li>
+    <li>which website sent people here</li>
+  </ul>
+  <p>GoatCounter uses <strong>no cookies</strong> and does <strong>not save your IP address</strong>. It does not follow you from site to site.</p>
+</section>
+
+<section>
+  <h2>🚫 What we never collect</h2>
+  <ul class="no">
+    <li>Names, emails, accounts or passwords (there are none)</li>
+    <li>Your IP address, or cookies of any kind</li>
+    <li>Your exact location, street or home address</li>
+    <li>Photos, camera video, or anything you type or choose in the app. Only the page's address is sent, never the part after a "?".</li>
+    <li>Anything used to show you ads. We do not use this data for ads or share it for advertising.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>💾 Your data in the app</h2>
+  <p>Photos you take stay on your own computer or phone. They are never uploaded by this app.</p>
+</section>
+
+<section>
+  <h2>⚖️ Children's privacy</h2>
+  <p>We do not ask for names, emails or accounts, and we do not try to find out who anyone is. We only look at totals. If a parent or guardian is worried, they can block GoatCounter in their browser (for example with a content blocker), and the app still works. A grown-up can also ask us to look into any question by contacting us below.</p>
+</section>
+
+<section>
+  <h2>👀 Who can see the numbers</h2>
+  <p>Only the PyInsect team and a grown-up who looks after the project can see the totals, through a private link.</p>
+</section>
+
+<section>
+  <h2>💬 Questions</h2>
+  <p>Ask a grown-up to contact the Wizkidz AI team through <a href="https://github.com/wizkidzai">github.com/wizkidzai</a>.</p>
+</section>
+</main>
+</body>
+</html>
